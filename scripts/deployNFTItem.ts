@@ -6,11 +6,11 @@ export async function run(provider: NetworkProvider) {
     const nft = provider.open(
         NFTItem.createFromConfig(
             {
-                owner: Address.parse('EQBIhPuWmjT7fP-VomuTWseE8JNWv2q7QYfsVQ1IZwnMk8wL'),
+                owner: Address.parse('EQBzfob0SUIbIt07VOCCtYagVTdum5DlPXX-Z54yg4tVC_Uj'),
                 index: 0n,
                 content: beginCell()
                     .storeUint(1, 8)
-                    .storeStringTail('https://raw.githubusercontent.com/Gusarich/fake-nft/main/scripts/metadata.json')
+                    .storeStringTail('https://raw.githubusercontent.com/delovoyhomie/fake-nft/main/scripts/metadata.json')
                     .endCell(),
             },
             await compile('NFTItem')
