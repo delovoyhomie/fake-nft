@@ -6,7 +6,7 @@ export async function run(provider: NetworkProvider) {
     const nft = provider.open(
         NFTItem.createFromConfig(
             {
-                owner: Address.parse('EQBzfob0SUIbIt07VOCCtYagVTdum5DlPXX-Z54yg4tVC_Uj'),
+                owner: Address.parse('EQDsD_def8Lmwk45z4UvkSuaDaJfXY8xg4l7XxIk9oOcPfRT'),
                 index: 0n,
                 content: beginCell()
                     .storeUint(1, 8)
